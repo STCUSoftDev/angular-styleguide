@@ -3053,9 +3053,9 @@ Use [Gulp](http://gulpjs.com) or [Grunt](http://gruntjs.com) for creating automa
     *Why?*: Filters can easily be abused and negatively affect performance if not used wisely, for example when a filter hits a large and deep object graph.
     
 ###### [Style [Y421](#style-y421)]
-  - Filters should be defined at the module level, not in controllers, services or directives unless the filters is 	meant for a specific purpsoe and is not intended for use at a higher scope. 
+  - Filters should be defined at the module level, not in controllers, services or directives unless the filters is 	meant for a specific purpose and is not intended for use at a higher scope. 
   
-	*Why?*: Filters are meant to be pure functions - stateless and idempotent. When filters are defined in controllers, it increases the likely hood that application state will leak into the filter. Additionally, defining the filter at the module level allows for resuse. See the [angular docs](https://docs.angularjs.org/guide/filter#creating-custom-filters) for a more detailed explanation.
+	*Why?*: Filters are meant to be pure functions - stateless and idempotent. When filters are defined in controllers, it increases the likely hood that application state will leak into the filter. Additionally, defining the filter at the module level allows for reuse. See the [angular docs](https://docs.angularjs.org/guide/filter#creating-custom-filters) for a more detailed explanation.
 
 **[Back to top](#table-of-contents)**
 
